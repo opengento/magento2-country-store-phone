@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © OpenGento, All rights reserved.
+ * See LICENSE bundled with this library for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="country">
+            <group id="information">
+                <field id="phone_number" translate="label comment" showInDefault="1" showInWebsite="0" showInStore="0" sortOrder="30">
+                    <label>Country Phone Number</label>
+                    <frontend_model>Opengento\CountryStorePhone\Block\Adminhtml\Config\Form\Field\CountryStorePhone</frontend_model>
+                    <backend_model>Magento\Config\Model\Config\Backend\Serialized\ArraySerialized</backend_model>
+                    <config_path>country/information/phone_number</config_path>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

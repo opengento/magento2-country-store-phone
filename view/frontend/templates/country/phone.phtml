@@ -1,0 +1,14 @@
+<?php
+/**
+ * Copyright © OpenGento, All rights reserved.
+ * See LICENSE bundled with this library for license details.
+ */
+declare(strict_types=1);
+
+use Magento\Framework\View\Element\Template;
+
+/** @var Template $block */
+?>
+<li class="country-store-phone-number-link" data-bind="scope: 'countryStoreData'">
+    <a data-bind="text: countryStoreData().phone_number, attr: {href: 'tel:' + countryStoreData().phone_number, title: countryStoreData().name}"></a>
+</li>

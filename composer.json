@@ -1,0 +1,60 @@
+{
+    "name": "opengento/module-country-store-phone",
+    "description": "This module add the phone number field to the country data object.",
+    "keywords": [
+        "php",
+        "magento",
+        "magento2",
+        "phone",
+        "telephone",
+        "location",
+        "country"
+    ],
+    "require": {
+        "php": "^7.1",
+        "magento/framework": "*",
+        "magento/module-config": "*",
+        "magento/module-customer": "*",
+        "magento/module-store": "*",
+        "magento/module-theme": "*",
+        "opengento/module-country-store": "^1.0.0"
+    },
+    "require-dev": {
+        "magento/marketplace-eqp": "^1.0.0"
+    },
+    "suggest": {
+        "opengento/module-country-store-redirect": "This module will redirect the customers regarding their country of origin, on their first visit session.",
+        "opengento/module-country-store-switcher": "This module will allows the customers to switch of store by country instead of name/language."
+    },
+    "type": "magento2-module",
+    "license": [
+        "MIT"
+    ],
+    "homepage": "https://github.com/opengento/magento2-country-store-phone",
+    "authors": [
+        {
+            "name": "Opengento Team",
+            "email": "opengento@gmail.com",
+            "homepage": "https://opengento.fr/",
+            "role": "lead"
+        },
+        {
+            "name": "Thomas Klein",
+            "email": "thomaskein876@gmail.com",
+            "homepage": "https://www.linkedin.com/in/thomas-klein/",
+            "role": "maintainer"
+        }
+    ],
+    "support": {
+        "source": "https://github.com/opengento/magento2-country-store-phone",
+        "issues": "https://github.com/opengento/magento2-country-store-phone/issues"
+    },
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Opengento\\CountryStorePhone\\": ""
+        }
+    }
+}

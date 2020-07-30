@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © OpenGento, All rights reserved.
+ * See LICENSE bundled with this library for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="top.links">
+            <block name="top.links.country.phoneNumber.link" as="country_phone_number" template="Opengento_CountryStorePhone::country/phone.phtml"/>
+        </referenceBlock>
+        <referenceBlock name="header.links">
+            <block name="header.links.country.phoneNumber.link" as="country_phone_number" template="Opengento_CountryStorePhone::country/phone.phtml"/>
+        </referenceBlock>
+    </body>
+</page>
