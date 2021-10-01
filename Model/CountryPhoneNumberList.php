@@ -36,7 +36,7 @@ final class CountryPhoneNumberList
 
     public function getList(): array
     {
-        return $this->phoneNumberMapping ?? $this->phoneNumberMapping = $this->resolveCountryStorePhoneNumberMap();
+        return $this->phoneNumberMapping ??= $this->resolveCountryStorePhoneNumberMap();
     }
 
     public function get(CountryInterface $country): ?string
@@ -46,7 +46,7 @@ final class CountryPhoneNumberList
 
     private function resolveCountryStorePhoneNumberMap(): array
     {
-        $countryMapping = [[]];
+        $countryMapping = [];
         $countryStorePhoneMap = $this->serializer->unserialize(
             $this->scopeConfig->getValue(self::CONFIG_PATH_COUNTRY_PHONE_MAP) ?? '{}'
         );
@@ -57,6 +57,6 @@ final class CountryPhoneNumberList
             }
         }
 
-        return array_merge(...$countryMapping);
+        return array_merge([], ...$countryMapping);
     }
 }
